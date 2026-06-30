@@ -1,0 +1,16 @@
+Generative AI:-
+Subset of Deeplearning. --> Subset of ML ----> Subset of AI.
+LLM:- 
+    - Type of AI designed to generate coherent human like text. Exampel GPT-4 LLM for ChatGPT application for the company OpenAI.
+    - Trained on Large corpus of text data.
+    - We usually interact with LLM by giving a prompt.
+    - The answer is Non-Deterministic(The generated text may be different for every user that uses the same prompt).
+
+
+
+1. Text Generation.
+2. Text Summarization.
+3. Information Extraction.
+4. Image Generation.
+5. Chatbot.
+6. Question Answering.
