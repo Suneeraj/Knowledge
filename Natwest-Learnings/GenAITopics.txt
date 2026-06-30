@@ -1,0 +1,6 @@
+1. Text Generation.
+2. Text Summarization.
+Information Extraction.
+Image generation.
+Chatbot.
+Question Answering
