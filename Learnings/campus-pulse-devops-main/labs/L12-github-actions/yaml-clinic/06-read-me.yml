@@ -1,0 +1,14 @@
+# A valid file: read it and predict its structure before printing it as JSON.
+team: Team Rocket
+members:
+  - name: Asha
+    role: developer
+  - name: Ravi
+    role: tester
+settings:
+  port: 8080
+  debug: false
+  version: "1.10"
+script: |
+  echo "line one"
+  echo "line two"

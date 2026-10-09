@@ -1,0 +1,5 @@
+# Always store and check out text files with Linux (LF) line endings,
+# even when the repository is edited on Windows. Bash scripts break with CRLF.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

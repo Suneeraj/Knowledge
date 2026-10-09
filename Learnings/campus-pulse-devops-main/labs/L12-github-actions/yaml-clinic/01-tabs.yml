@@ -1,0 +1,3 @@
+app:
+	name: Campus Pulse
+	port: 8080

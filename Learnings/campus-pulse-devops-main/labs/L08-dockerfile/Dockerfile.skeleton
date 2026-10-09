@@ -1,0 +1,27 @@
+# Campus Pulse Dockerfile (starter)
+# Copy this file to the repository root as "Dockerfile", then add one instruction
+# under each numbered comment. labs/L08-dockerfile/README.md explains each one.
+
+# 1. Base image: the official slim Python 3.12 image.
+FROM python:3.12-slim
+
+# 2. Build argument APP_VERSION with default value 1.0.0.
+
+# 3. Environment variables: PYTHONDONTWRITEBYTECODE=1, PYTHONUNBUFFERED=1,
+#    APP_PORT=8080 and APP_VERSION=${APP_VERSION}.
+
+# 4. Working directory /app.
+
+# 5. Create an unprivileged user "appuser" with UID 10001.
+
+# 6. Copy requirements.txt, then install it with pip (no cache).
+
+# 7. Copy the app/ directory and wsgi.py.
+
+# 8. Switch to the appuser user.
+
+# 9. Document port 8080.
+
+# 10. Health check (copy it exactly from the README).
+
+# 11. Start command (copy it exactly from the README).

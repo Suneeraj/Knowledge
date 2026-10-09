@@ -1,0 +1,5 @@
+app:
+  name: Campus Pulse
+  port: 8080
+  environment: production
+  port: 5000

@@ -1,0 +1,3 @@
+# Files and folders Docker should NOT send to the build (one pattern per line).
+# Only requirements.txt, app/ and wsgi.py are needed inside the image.
+.git
