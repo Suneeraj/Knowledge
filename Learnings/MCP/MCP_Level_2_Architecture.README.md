@@ -269,6 +269,28 @@ MCP SERVER
 AWS / DATABASE / API / FILES
 ```
 
+### MCP Workflow: Who Does What?
+
+1. **Who receives the user's request?**  
+   The **MCP Host (AI application)** receives the user's request.
+
+2. **Who decides that an EC2 tool is needed?**  
+   The **LLM (AI model)** decides which tool is needed based on the user's request.
+
+3. **Who communicates with the MCP server?**  
+   The **MCP Client** communicates with the MCP Server using the MCP protocol.
+
+4. **Who provides the EC2 tool?**  
+   The **MCP Server** exposes the EC2 tool to the AI application.
+
+5. **Who actually calls the AWS API?**  
+   The **EC2 tool implementation on the MCP Server** calls the AWS API using the AWS SDK or AWS API.
+
+6. **Who returns the result to the AI workflow?**  
+   The **MCP Server** returns the result to the MCP Client, which passes it to the AI Host and LLM for processing.
+
+**Note:** The LLM decides which tool to use, but it does not directly execute the AWS API call. The MCP Server runs the tool implementation that interacts with AWS.
+
 **Next:** Level 3 — Build Your First MCP Server. You will install the Python MCP SDK, create `server.py`, build your first tool, run the server, test it, and understand the code line by line.
 
 | Component | Simple meaning | Memory trick |
