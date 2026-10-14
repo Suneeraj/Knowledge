@@ -83,6 +83,31 @@ python -m pip install --upgrade pip
 python -m pip install "mcp[cli]"
 ```
 
+### Why do we use quotes in `mcp[cli]`?
+
+```bash
+python -m pip install "mcp[cli]"
+```
+
+- **`mcp`**: The Python package for the Model Context Protocol (MCP) SDK.
+- **`[cli]`**: Specifies an optional dependency group that installs additional command-line tools needed for MCP development.
+- **Double quotes (`" "`)**: Protect the square brackets from being interpreted specially by certain shells, such as Zsh.
+
+**Can we install it without quotes?**
+
+Yes, in some shells. However, using quotes is recommended for compatibility across different environments.
+
+```bash
+# Recommended
+python -m pip install "mcp[cli]"
+
+# Also valid in Bash and Zsh
+python -m pip install 'mcp[cli]'
+```
+
+**Note:** In Windows Command Prompt (CMD), the command may also work without quotes. Using quotes is a safe, consistent practice.
+
+
 Check the installation:
 ```bash
 python -m pip show mcp
