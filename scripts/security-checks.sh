@@ -53,4 +53,4 @@ if [[ "$failed" -ne 0 ]]; then
   exit 1
 fi
 
-echo "All manual security checks passed."
+echo "All security checks passed."
