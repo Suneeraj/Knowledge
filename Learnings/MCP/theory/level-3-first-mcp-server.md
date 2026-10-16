@@ -136,10 +136,13 @@ Official references:
 
 ## 6. Create `server.py`
 
-```python
-from mcp.server.fastmcp import FastMCP
+**SDK version note:** This code uses the MCP Python SDK 2.x API. In SDK 2.x, `FastMCP` was renamed to `MCPServer`, and the import path is `mcp.server.mcpserver`. Use `from mcp.server.mcpserver import MCPServer`.
 
-mcp = FastMCP("Calculator")
+
+```python
+from mcp.server.mcpserver import MCPServer
+
+mcp = MCPServer("Calculator")
 
 
 @mcp.tool()
@@ -166,7 +169,7 @@ if __name__ == "__main__":
 
 ### Understand the code
 
-- `FastMCP("Calculator")` creates an MCP server instance.
+- `MCPServer("Calculator")` creates an MCP server instance in the MCP Python SDK 2.x.
 - `@mcp.tool()` registers the decorated function as a tool.
 - Type hints such as `a: int` describe expected inputs.
 - The docstring describes the tool to clients.
@@ -312,7 +315,7 @@ Check the SDK documentation for the current development/Inspector workflow and c
 
 ## 13. Recap
 
-- `FastMCP` creates the server.
+- `MCPServer` creates the server in MCP Python SDK 2.x.
 - `@mcp.tool()` exposes a Python function as an MCP tool.
 - Type hints and docstrings help describe the tool.
 - A client is needed to interact with a stdio server.
