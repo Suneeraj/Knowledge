@@ -1,2 +1,1 @@
-Learnings
 Repository for  Learning
