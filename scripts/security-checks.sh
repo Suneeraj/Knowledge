@@ -2,7 +2,7 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-echo "Starting manual security checks..."
+echo "Starting security checks job..."
 failed=0
 
 # Check for common hardcoded secret patterns

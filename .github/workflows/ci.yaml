@@ -1,5 +1,5 @@
 
-name: Simple Security Checks
+name: Security Checks
 
 on:
   push:
@@ -15,7 +15,7 @@ permissions:
 
 jobs:
   security-checks:
-    name: Manual Security Checks
+    name: Starting Security Checks
     runs-on: ubuntu-latest
 
     steps:
